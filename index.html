@@ -10,11 +10,23 @@
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom CSS for the '3 Col Portfolio' Template -->
     <link href="css/3-col-portfolio.css" rel="stylesheet">
+    <style>
+      .sidebar {
+        height: 100vh;
+        position: fixed;
+        top: 50px;
+        left: 0;
+        background-color: #f8f9fa;
+        padding: 15px;
+        width: 200px;
+        border-right: 1px solid #ddd;
+      }
+      .content {
+        margin-left: 220px;
+      }
+    </style>
   </head>
-
   <body>
 
     <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
@@ -26,97 +38,44 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="http://startbootstrap.com">Start Bootstrap</a>
+          <a class="navbar-brand" href="#">Start Bootstrap</a>
         </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav">
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container -->
+        </div>
+      </div>
     </nav>
 
-    <div class="container">
+    <div class="sidebar">
+      <h4>Navigation</h4>
+      <ul class="nav nav-pills nav-stacked">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#project-link">Areawide Monitoring</a></li>
+      </ul>
+    </div>
 
+    <div class="container content">
       <div class="row">
-        
         <div class="col-lg-12">
           <h1 class="page-header">Monitoring & Management in San Luis Obispo, CA.
           <small><br>Vine Mealybug (<em>Planococcus ficus</em>)</small>
           </h1>
         </div>
-
       </div>
-<h3><a href="#project-link">Areawide Monitoring</a></h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+      <h3><a href="#project-link">Areawide Monitoring</a></h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
       <div class="row">
-
         <div class="col-md-12 portfolio-item">
-          <div class='tableauPlaceholder' id='viz1726846615627' style='position: relative'>
-            <noscript>
-              <a href='#'>
-                <img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;jt&#47;jtbrown-2e3f357902-vmb&#47;Dashboard1&#47;1_rss.png' style='border: none' />
-              </a>
-            </noscript>
-            <object class='tableauViz' style='display:none;'>
-              <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-              <param name='embed_code_version' value='3' /> 
-              <param name='path' value='views&#47;jtbrown-2e3f357902-vmb&#47;Dashboard1?:language=en-US&amp;:embed=true&amp;publish=yes&amp;:sid=&amp;:redirect=auth' /> 
-              <param name='toolbar' value='yes' />
-              <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;jt&#47;jtbrown-2e3f357902-vmb&#47;Dashboard1&#47;1.png' /> 
-              <param name='animate_transition' value='yes' />
-              <param name='display_static_image' value='yes' />
-              <param name='display_spinner' value='yes' />
-              <param name='display_overlay' value='yes' />
-              <param name='display_count' value='yes' />
-              <param name='language' value='en-US' />
-              <param name='filter' value='publish=yes' />
-            </object>
-          </div> 
-          <script type='text/javascript'> 
-            var divElement = document.getElementById('viz1726846615627'); 
-            var vizElement = divElement.getElementsByTagName('object')[0]; 
-            if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
-            else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
-            else { vizElement.style.width='100%';vizElement.style.height='727px';} 
-            var scriptElement = document.createElement('script'); 
-            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; 
-            vizElement.parentNode.insertBefore(scriptElement, vizElement); 
-          </script>
-          
+          <!-- Tableau Embed Code -->
         </div>
-
-
       </div>
-
       <hr>
-
-      <div class="row text-center">
-        
-        <div class="col-lg-12">
-          <ul class="pagination">
-            <li><a href="#">&laquo;</a></li>
-            <li class="active"><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <li><a href="#">&raquo;</a></li>
-          </ul>        
-        </div>
-
-      </div>
-
-    </div><!-- /.container -->
-
-    <div class="container">
-
-      <hr>
-
       <footer>
         <div class="row">
           <div class="col-lg-12">
@@ -124,16 +83,13 @@
           </div>
         </div>
       </footer>
-      
-    </div><!-- /.container -->
+    </div>
 
-    <!-- JavaScript -->
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/bootstrap.js"></script>
-    <script type="text/javascript">
+    <script>
       var dt = new Date();
       document.getElementById('getCurrentDate').innerHTML = dt.getFullYear();
     </script>
   </body>
-
 </html>
