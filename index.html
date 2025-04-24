@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <!-- saved from url=(0062)https://azmind.com/demo/bootstrap-footer/template-2/index.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en"><head>
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 		<!-- Required meta tags -->
         
@@ -9,8 +11,10 @@
         <title>VMB Areawide</title>
 
         <!-- CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
         <link rel="stylesheet" href="./Bootstrap Footer Template_files/css">
-		<link rel="stylesheet" href="./Bootstrap Footer Template_files/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="./Bootstrap Footer Template_files/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="./Bootstrap Footer Template_files/all.css">
         <link rel="stylesheet" href="./Bootstrap Footer Template_files/animate.css">
         <link rel="stylesheet" href="./Bootstrap Footer Template_files/style.css">
@@ -101,7 +105,9 @@
                       </div>
                       <div class="col-9">
                         <h3 class="text-center">January 2025</h3>
-                        <a href="img/jan vmb.png" target="_blank"> <img src="img/jan vmb.png" alt="January VMB" class="img-fluid mt-2"></a>
+                        <a data-fancybox="gallery" href="img/jan vmb.png">
+                          <img src="img/jan vmb.png" alt="January VMB" class="img-fluid mt-2">
+                          </a>
                         </div>
                         </div>
                         </div>
@@ -292,6 +298,19 @@
         <script src="./Bootstrap Footer Template_files/wow.min.js"></script>
         <script src="./Bootstrap Footer Template_files/retina-1.1.0.min.js"></script>
         <script src="./Bootstrap Footer Template_files/scripts.js"></script>
+        <script>
+  const zoomImg = document.getElementById('janZoomImg');
+
+  zoomImg.addEventListener('click', () => {
+    zoomImg.classList.toggle('zoomed');
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === "Escape") {
+      zoomImg.classList.remove('zoomed');
+    }
+  });
+</script>
 
 </body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
       div.grammarly-desktop-integration {
