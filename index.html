@@ -23,35 +23,15 @@
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://azmind.com/demo/bootstrap-footer/template-2/assets/ico/apple-touch-icon-114-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://azmind.com/demo/bootstrap-footer/template-2/assets/ico/apple-touch-icon-72-precomposed.png">
         <link rel="apple-touch-icon-precomposed" href="https://azmind.com/demo/bootstrap-footer/template-2/assets/ico/apple-touch-icon-57-precomposed.png">
+
 <style>
-  .zoomable {
-    cursor: zoom-in;
-    transition: transform 0.2s ease;
-  }
-
-  .overlay {
-    display: none;
-    position: fixed;
-    z-index: 1050;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.85);
-    justify-content: center;
-    align-items: center;
-    cursor: zoom-out;
-  }
-
-  .overlay.show {
-    display: flex;
-  }
-
-  .zoom-img {
-    max-width: 90%;
-    max-height: 90%;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  .zoom-on-hover {
     transition: transform 0.3s ease;
+  }
+
+  .zoom-on-hover:hover {
+    transform: scale(1.1);
+    z-index: 1;
   }
 </style>
 
@@ -120,38 +100,53 @@
 
 <!-- Section 1 -->
 <div id="dashboard" class="section-1-container section-container">
-    <div class="container">
-        <div class="row">
-            <div class="col section-1 section-description wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
-                <h2>Updated Heatmaps</h2>
-                <h3>Upto date static heatmaps of VMB capture at participating vineyards</h3>
-                <div class="row text-start">
-                  <div class="col-md-4 section-3-box wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">
-                    <div class="row">
-                      <div class="col-3">
-                      </div>
-                      <div class="col-9">
-<h3 class="text-center">January 2025</h3>
-<img src="img/jan vmb.png" alt="January VMB" class="img-fluid mt-2 zoomable" id="janVmbThumbnail">
+  <div class="container">
+    <div class="row">
+      <div class="col section-1 section-description wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+        <h2>Updated Heatmaps</h2>
+        <h3>Up to date static heatmaps of VMB capture at participating vineyards</h3>
 
-<!-- Hidden overlay for full-size image -->
-<div id="zoomOverlay" class="overlay" onclick="closeZoom()">
-  <img src="img/jan vmb.png" alt="January VMB" class="zoom-img">
-</div>
-                        </div>
-                        </div>
-                        </div>
-                        </div>
-                        <div class="divider-1 wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"><span></span>
-                        </div>
-                <br>
-                <br>
+        <!-- Images in evenly spaced columns -->
+        <div class="row text-center">
+          <!-- January -->
+          <div class="col-md-4 section-3-box wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">
+            <h3>January 2025</h3>
+            <a href="img/jan all vmb.pdf" target="_blank">
+              <img src="img/jan vmb.png" alt="January VMB" class="img-fluid mt-2 zoom-on-hover">
+            </a>
+          </div>
+
+          <!-- February -->
+          <div class="col-md-4 section-3-box wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">
+            <h3>February 2025</h3>
+            <a href="img/feb all vmb.pdf" target="_blank">
+              <img src="img/feb vmb.png" alt="February VMB" class="img-fluid mt-2 zoom-on-hover">
+            </a>
+          </div>
+
+          <!-- March
+          <div class="col-md-4 section-3-box wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">
+            <h3>March 2025</h3>
+            <a href="img/mar vmb.png" target="_blank">
+              <img src="img/mar vmb.png" alt="March VMB" class="img-fluid mt-2 zoom-on-hover">
+            </a>
+          </div> -->
+        </div>
+
+        <!-- Divider -->
+        <br><br>
+        <div class="divider-1 wow fadeInUp animated d-flex justify-content-center" style="visibility: visible; animation-name: fadeInUp;">
+          <span></span>
+        </div>
+
+        <br><br>
                 <h2>VMB Dashboards</h2>
                 <h3> DEMO ONLY: Interactive maps of VMB capture at participating vineyards in San Luis Obispo</h3>
                 <div class="wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"><span></span>
                 </div>
             </div>
         </div>
+        
 
 <!-- Tableau Embed Full Width -->
 <div class="row">
@@ -328,23 +323,6 @@
         <script src="./Bootstrap Footer Template_files/wow.min.js"></script>
         <script src="./Bootstrap Footer Template_files/retina-1.1.0.min.js"></script>
         <script src="./Bootstrap Footer Template_files/scripts.js"></script>
-<script>
-  const thumb = document.getElementById('janVmbThumbnail');
-  const overlay = document.getElementById('zoomOverlay');
-
-  thumb.addEventListener('click', () => {
-    overlay.classList.add('show');
-  });
-
-  function closeZoom() {
-    overlay.classList.remove('show');
-  }
-
-  // Optional: Close with Esc key
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') closeZoom();
-  });
-</script>
 
 </body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
       div.grammarly-desktop-integration {
