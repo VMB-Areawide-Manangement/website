@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <!-- saved from url=(0062)https://azmind.com/demo/bootstrap-footer/template-2/index.html -->
-<html lang="en"><head>
-  
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 		<!-- Required meta tags -->
         
@@ -11,10 +9,8 @@
         <title>VMB Areawide</title>
 
         <!-- CSS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
-        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
         <link rel="stylesheet" href="./Bootstrap Footer Template_files/css">
-        <link rel="stylesheet" href="./Bootstrap Footer Template_files/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="./Bootstrap Footer Template_files/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="./Bootstrap Footer Template_files/all.css">
         <link rel="stylesheet" href="./Bootstrap Footer Template_files/animate.css">
         <link rel="stylesheet" href="./Bootstrap Footer Template_files/style.css">
@@ -27,20 +23,21 @@
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://azmind.com/demo/bootstrap-footer/template-2/assets/ico/apple-touch-icon-114-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://azmind.com/demo/bootstrap-footer/template-2/assets/ico/apple-touch-icon-72-precomposed.png">
         <link rel="apple-touch-icon-precomposed" href="https://azmind.com/demo/bootstrap-footer/template-2/assets/ico/apple-touch-icon-57-precomposed.png">
-
 <style>
   .zoomable {
     cursor: zoom-in;
-    transition: opacity 0.3s ease;
+    transition: transform 0.2s ease;
   }
 
   .overlay {
     display: none;
     position: fixed;
     z-index: 1050;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
     justify-content: center;
     align-items: center;
     cursor: zoom-out;
@@ -53,11 +50,10 @@
   .zoom-img {
     max-width: 90%;
     max-height: 90%;
-    box-shadow: 0 0 20px #000;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
     transition: transform 0.3s ease;
   }
 </style>
-
 
     </head>
 
@@ -128,22 +124,20 @@
         <div class="row">
             <div class="col section-1 section-description wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
                 <h2>Updated Heatmaps</h2>
-                <h3>Near-realtime date static heatmaps of VMB capture at participating vineyards</h3>
+                <h3>Upto date static heatmaps of VMB capture at participating vineyards</h3>
                 <div class="row text-start">
                   <div class="col-md-4 section-3-box wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">
                     <div class="row">
                       <div class="col-3">
                       </div>
                       <div class="col-9">
-                        <h3 class="text-center">January 2025</h3>
+<h3 class="text-center">January 2025</h3>
 <img src="img/jan vmb.png" alt="January VMB" class="img-fluid mt-2 zoomable" id="janVmbThumbnail">
 
-<!-- Hidden overlay image -->
+<!-- Hidden overlay for full-size image -->
 <div id="zoomOverlay" class="overlay" onclick="closeZoom()">
   <img src="img/jan vmb.png" alt="January VMB" class="zoom-img">
 </div>
-
-                          </a>
                         </div>
                         </div>
                         </div>
@@ -334,19 +328,6 @@
         <script src="./Bootstrap Footer Template_files/wow.min.js"></script>
         <script src="./Bootstrap Footer Template_files/retina-1.1.0.min.js"></script>
         <script src="./Bootstrap Footer Template_files/scripts.js"></script>
-        <script>
-  const zoomImg = document.getElementById('janZoomImg');
-
-  zoomImg.addEventListener('click', () => {
-    zoomImg.classList.toggle('zoomed');
-  });
-
-  document.addEventListener('keydown', (e) => {
-    if (e.key === "Escape") {
-      zoomImg.classList.remove('zoomed');
-    }
-  });
-  
 <script>
   const thumb = document.getElementById('janVmbThumbnail');
   const overlay = document.getElementById('zoomOverlay');
@@ -363,9 +344,6 @@
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') closeZoom();
   });
-</script>
-
-
 </script>
 
 </body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
