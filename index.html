@@ -28,6 +28,37 @@
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://azmind.com/demo/bootstrap-footer/template-2/assets/ico/apple-touch-icon-72-precomposed.png">
         <link rel="apple-touch-icon-precomposed" href="https://azmind.com/demo/bootstrap-footer/template-2/assets/ico/apple-touch-icon-57-precomposed.png">
 
+<style>
+  .zoomable {
+    cursor: zoom-in;
+    transition: opacity 0.3s ease;
+  }
+
+  .overlay {
+    display: none;
+    position: fixed;
+    z-index: 1050;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    cursor: zoom-out;
+  }
+
+  .overlay.show {
+    display: flex;
+  }
+
+  .zoom-img {
+    max-width: 90%;
+    max-height: 90%;
+    box-shadow: 0 0 20px #000;
+    transition: transform 0.3s ease;
+  }
+</style>
+
+
     </head>
 
     <body data-new-gr-c-s-check-loaded="14.1232.0" data-gr-ext-installed="">
@@ -105,8 +136,13 @@
                       </div>
                       <div class="col-9">
                         <h3 class="text-center">January 2025</h3>
-                        <a data-fancybox="gallery" href="img/jan vmb.png">
-                          <img src="img/jan vmb.png" alt="January VMB" class="img-fluid mt-2">
+<img src="img/jan vmb.png" alt="January VMB" class="img-fluid mt-2 zoomable" id="janVmbThumbnail">
+
+<!-- Hidden overlay image -->
+<div id="zoomOverlay" class="overlay" onclick="closeZoom()">
+  <img src="img/jan vmb.png" alt="January VMB" class="zoom-img">
+</div>
+
                           </a>
                         </div>
                         </div>
@@ -310,6 +346,26 @@
       zoomImg.classList.remove('zoomed');
     }
   });
+  
+<script>
+  const thumb = document.getElementById('janVmbThumbnail');
+  const overlay = document.getElementById('zoomOverlay');
+
+  thumb.addEventListener('click', () => {
+    overlay.classList.add('show');
+  });
+
+  function closeZoom() {
+    overlay.classList.remove('show');
+  }
+
+  // Optional: Close with Esc key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeZoom();
+  });
+</script>
+
+
 </script>
 
 </body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
