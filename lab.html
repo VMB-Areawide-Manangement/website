@@ -24,220 +24,229 @@
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://azmind.com/demo/bootstrap-footer/template-2/assets/ico/apple-touch-icon-72-precomposed.png">
         <link rel="apple-touch-icon-precomposed" href="https://azmind.com/demo/bootstrap-footer/template-2/assets/ico/apple-touch-icon-57-precomposed.png">
 
+<style>
+
+.team-photo {
+  height: 250px;         /* uniform height */
+  object-fit: cover;     /* crop to fill the frame nicely */
+  width: 100%;           /* responsive width */
+  border-radius: 8px;    /* optional: slight rounding */
+}
+
+  .zoom-on-hover {
+    transition: transform 0.3s ease;
+  }
+
+  .zoom-on-hover:hover {
+    transform: scale(1.1);
+    z-index: 1;
+  }
+</style>
+
     </head>
 
     <body data-new-gr-c-s-check-loaded="14.1232.0" data-gr-ext-installed="">
 
+<!-- Responsive Navbar (Hamburger Only) -->
+<nav class="navbar navbar-dark bg-dark w-100 position-absolute" style="z-index: 1000; top: 0;">
+  <div class="container">
+    <a class="navbar-brand text-white" href="https://vmb-areawide-manangement.github.io/website">VMB Areawide Program</a>
+    
+    <!-- Always show hamburger -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu is always hidden until toggled -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#maps">Heatmaps</a>
+          </li>        
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#dashboard">VMB Dashboard</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link text-white" href="#biocontrol">BioControl</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#resources">Resources</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="https://vmb-areawide-manangement.github.io/website/lab">Daane Lab</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
 <!-- Top content -->
-<div class="top-content position-relative" style="z-index: 0; background: none;">
+<div class="top-content position-relative pt-5" style="z-index: 0; background: none; padding-top: 80px;">
   <div class="inner-bg py-5" style="position: relative; z-index: 1;">
     <div class="container">
       <div class="row justify-content-center text-center">
         <div class="col-lg-8 col-md-10">
           <h1 class="wow fadeInLeftBig animated display-4" style="visibility: visible; animation-name: fadeInLeftBig;">
-            SLO: VMB Areawide Program
+            The VMB Management Team
           </h1>
           <div class="description wow fadeInUp animated mt-3" style="visibility: visible; animation-name: fadeInUp;">
-            <p>
-              This areawide program was made possible by Dr. Kent Daane at the University of California, Berkeley, the Vineyard Team, Pacific Coast Farms, and with the continued support of all the grower-members near Edna Valley in San Luis Obispo County.
-            </p>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Responsive background image -->
+<!-- Responsive background image -->
   <div class="backstretch" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; z-index: -1;">
     <img src="./img/vmb.png" alt="VMB Background" style="width: 100%; height: auto; object-fit: cover; opacity: 0.4;">
   </div>
 </div>
-<!-- Section 1 -->
-<div class="section-1-container section-container">
-    <div class="container">
-        <div class="row">
-            <div class="col section-1 section-description wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
-                <h2>VMB Dashboard</h2>
-                <div class="divider-1 wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"><span></span>
-                </div>
-            </div>
+
+<!-- Lab -->
+<div id="lab" class="section-1-container section-container section-container-gray-bg">
+  <div class="container">
+    <div class="row">
+      <div class="col section-1 section-description wow fadeIn animated">
+        <h2>Daane Lab Members</h2>
+
+        <!-- Centered Top Member -->
+        <div class="row justify-content-center text-center mb-4">
+          <div class="col-md-4 section-3-box wow fadeInDown animated">
+            <h3>Dr. Kent Daane</h3>
+            <h5>Principal Investigator</h5>
+            <a href="img/kent.png" target="_blank">
+              <img src="img/kent.png" alt="Kent Daane" class="img-fluid mt-2 zoom-on-hover">
+            </a>
+          </div>
         </div>
 
-<!-- Tableau Embed Full Width -->
-<div class="row">
-  <div class="col-12 px-0">
-    <div class='tableauPlaceholder w-100' id='viz1745290615087' style='position: relative'>
-      <noscript>
-        <a href='#'><img alt='Dashboard 1 ' src='https://public.tableau.com/static/images/jt/jtbrown-2e3f357902-vmb/Dashboard1/1_rss.png' style='border: none; width: 100%;' /></a>
-      </noscript>
-      <object class='tableauViz' style='display:none; width: 100%; height: 827px;'>
-        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-        <param name='embed_code_version' value='3' />
-        <param name='site_root' value='' />
-        <param name='name' value='jtbrown-2e3f357902-vmb/Dashboard1' />
-        <param name='tabs' value='no' />
-        <param name='toolbar' value='yes' />
-        <param name='static_image' value='https://public.tableau.com/static/images/jt/jtbrown-2e3f357902-vmb/Dashboard1/1.png' />
-        <param name='animate_transition' value='yes' />
-        <param name='display_static_image' value='yes' />
-        <param name='display_spinner' value='yes' />
-        <param name='display_overlay' value='yes' />
-        <param name='display_count' value='yes' />
-        <param name='language' value='en-US' />
-        <param name='filter' value='publish=yes' />
-        <param name='increment_view_count' value='no' />
-      </object>
+        <!-- Grid of Members -->
+        <div class="row text-center">
+          <!-- James -->
+          <div class="col-md-3 section-3-box wow fadeInLeft animated">
+            <h3>James Brown</h3>
+            <h5>Postdoctoral Researcher</h5>
+            <a href="img/james.png" target="_blank">
+              <img src="img/james.png" alt="James Brown" class="img-fluid mt-2 zoom-on-hover team-photo">
+            </a>
+          </div>
+
+          <!-- Ryan -->
+          <div class="col-md-3 section-3-box wow fadeInLeft animated">
+            <h3>Ryan Perry</h3>
+            <h5>Postdoctoral Researcher</h5>
+            <a href="img/ryan.png" target="_blank">
+              <img src="img/ryan.png" alt="Ryan Perry" class="img-fluid mt-2 zoom-on-hover team-photo">
+            </a>
+          </div>
+
+          <!-- Mike -->
+          <div class="col-md-3 section-3-box wow fadeInLeft animated">
+            <h3>Mike Lopez</h3>
+            <h5>Lab Manager</h5>
+            <a href="img/mike.png" target="_blank">
+              <img src="img/mike.png" alt="Mike Lopez" class="img-fluid mt-2 zoom-on-hover team-photo">
+            </a>
+          </div>
+
+          <!-- Emily -->
+          <div class="col-md-3 section-3-box wow fadeInLeft animated">
+            <h3>Emily Henry</h3>
+            <h5>Lab Assistant</h5>
+            <a href="img/emily.png" target="_blank">
+              <img src="img/emily.png" alt="Emily Henry" class="img-fluid mt-2 zoom-on-hover team-photo">
+            </a>
+          </div>
+
+          <!-- Gadiel -->
+          <div class="col-md-3 section-3-box wow fadeInLeft animated">
+            <h3>Gadiel Leon</h3>
+            <h5>Lab Assistant</h5>
+            <a href="img/gadiel.png" target="_blank">
+              <img src="img/gadiel.png" alt="Gadiel Leon" class="img-fluid mt-2 zoom-on-hover team-photo">
+            </a>
+          </div>
+
+          <!-- Carlos -->
+          <div class="col-md-3 section-3-box wow fadeInLeft animated">
+            <h3>Carlos Flores</h3>
+            <h5>Lab Assistant</h5>
+            <a href="img/carlos.png" target="_blank">
+              <img src="img/carlos.png" alt="Carlos Flores" class="img-fluid mt-2 zoom-on-hover team-photo">
+            </a>
+          </div>
+
+          <!-- Nick -->
+          <div class="col-md-3 section-3-box wow fadeInLeft animated">
+            <h3>Nick Duft</h3>
+            <h5>Student Lab Assistant</h5>
+            <a href="img/nick.png" target="_blank">
+              <img src="img/nick.png" alt="Nick Duft" class="img-fluid mt-2 zoom-on-hover team-photo">
+            </a>
+          </div>
+
+          <!-- Dez -->
+          <div class="col-md-3 section-3-box wow fadeInLeft animated">
+            <h3>Dez Hernandez</h3>
+            <h5>Student Lab Assistant</h5>
+            <a href="img/dez.png" target="_blank">
+              <img src="img/dez.png" alt="Dez Hernandez" class="img-fluid mt-2 zoom-on-hover team-photo">
+            </a>
+          </div>
+
+          <!-- Johnny -->
+          <div class="col-md-3 section-3-box wow fadeInLeft animated">
+            <h3>Johnny Reyes</h3>
+            <h5>Student Lab Assistant</h5>
+            <a href="img/johnny.png" target="_blank">
+              <img src="img/johnny.png" alt="Johnny Reyes" class="img-fluid mt-2 zoom-on-hover team-photo">
+            </a>
+          </div>
+
+          <!-- Uncomment and customize if needed
+          <div class="col-md-3 section-3-box wow fadeInLeft animated">
+            <h3>Luke</h3>
+            <h5>Student</h5>
+            <a href="img/luke.png" target="_blank">
+              <img src="img/luke.png" alt="Luke" class="img-fluid mt-2 zoom-on-hover team-photo">
+            </a>
+          </div>
+          -->
+
+        </div>
+      </div>
     </div>
   </div>
-  <script type='text/javascript'>
-  var divElement = document.getElementById('viz1745290615087');
-  var vizElement = divElement.getElementsByTagName('object')[0];
-  if (divElement.offsetWidth > 800) {
-    vizElement.style.width = '100%';
-    vizElement.style.height = '827px';
-  } else if (divElement.offsetWidth > 500) {
-    vizElement.style.width = '100%';
-    vizElement.style.height = '827px';
-  } else {
-    vizElement.style.width = '100%';
-    vizElement.style.height = '727px';
-  }
-  var scriptElement = document.createElement('script');
-  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-  vizElement.parentNode.insertBefore(scriptElement, vizElement);
-  </script>
+</div>
+
+<!-- Cooperators -->
+<div id="resources" class="section-3-container section-container">
+  <div class="container">
+    <div class="row">
+      <div class="col section-3 section-description wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+        <h2>Growers & Cooperators</h2>
+        <div class="divider-1 wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"><span></span></div>
+      </div>
+    </div>
+          <div class="col-md-4 section-3-box wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">
+            <a href="img/luke" target="_blank">
+              <img src="img/luke.png" alt="February VMB" class="img-fluid mt-2 zoom-on-hover team-photo">
+            </a>
+          </div>
+    </div>
   </div>
-  </div>
-  </div>
+</div>
 
-        <!-- Section 2 -->
-        <div class="section-2-container section-container section-container-gray-bg">
-	        <div class="container">
-	            <div class="row">
-	                <div class="col section-2 section-description wow fadeInLeftBig animated" style="visibility: visible; animation-name: fadeInLeftBig;">
-	                	<h2>Section 2</h2>
-	                    <p>
-	                    	Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut 
-	                    	aliquip ex ea commodo consequat. Ut wisi enim ad minim veniam, quis nostrud.
-	                    </p>
-	                </div>
-	            </div>
-	        </div>
-        </div>
-
-		<!-- Section 3 -->
-        <div class="section-3-container section-container">
-	        <div class="container">
-	        	
-	            <div class="row">
-	                <div class="col section-3 section-description wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
-	                    <h2>Section 3</h2>
-	                    <div class="divider-1 wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"><span></span></div>
-	                </div>
-	            </div>
-	            
-	            <div class="row">
-	                <div class="col-md-6 section-3-box wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">
-	                	<div class="row">
-	                		<div class="col-md-3">
-	                			<div class="section-3-box-icon">
-	                				<i class="fas fa-paperclip"></i>
-	                			</div>
-	                		</div>
-	                		<div class="col-md-9">
-	                			<h3>Ut wisi enim ad minim</h3>
-		                    	<p>
-		                    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
-		                    		Ut wisi enim ad minim veniam, quis nostrud.
-		                    	</p>
-	                		</div>
-	                	</div>
-	                </div>
-	                <div class="col-md-6 section-3-box wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">
-	                	<div class="row">
-	                		<div class="col-md-3">
-	                			<div class="section-3-box-icon">
-	                				<i class="fas fa-pencil-alt"></i>
-	                			</div>
-	                		</div>
-	                		<div class="col-md-9">
-	                			<h3>Sed do eiusmod tempor</h3>
-		                    	<p>
-		                    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
-		                    		Ut wisi enim ad minim veniam, quis nostrud.
-		                    	</p>
-	                		</div>
-	                	</div>
-	                </div>
-	            </div>
-	            
-	            <div class="row">
-	                <div class="col-md-6 section-3-box wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">
-	                	<div class="row">
-	                		<div class="col-md-3">
-	                			<div class="section-3-box-icon">
-	                				<i class="fas fa-cloud"></i>
-	                			</div>
-	                		</div>
-	                		<div class="col-md-9">
-	                			<h3>Quis nostrud exerci tat</h3>
-		                    	<p>
-		                    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
-		                    		Ut wisi enim ad minim veniam, quis nostrud.
-		                    	</p>
-	                		</div>
-	                	</div>
-	                </div>
-	                <div class="col-md-6 section-3-box wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">
-	                	<div class="row">
-	                		<div class="col-md-3">
-	                			<div class="section-3-box-icon">
-	                				<i class="fab fa-google"></i>
-	                			</div>
-	                		</div>
-	                		<div class="col-md-9">
-	                			<h3>Minim veniam quis nostrud</h3>
-		                    	<p>
-		                    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
-		                    		Ut wisi enim ad minim veniam, quis nostrud.
-		                    	</p>
-	                		</div>
-	                	</div>
-	                </div>
-	            </div>
-
-	        </div>
-        </div>
-
-		<!-- Section 4 -->
-        <div class="section-4-container section-container section-container-gray-bg">
-	        <div class="container">
-	            <div class="row">
-	                <div class="col section-4 section-description wow fadeInLeftBig animated" style="visibility: visible; animation-name: fadeInLeftBig;">
-	                	<h2>Section 4</h2>
-	                    <p>
-	                    	Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut 
-	                    	aliquip ex ea commodo consequat. Ut wisi enim ad minim veniam, quis nostrud.
-	                    </p>
-	                </div>
-	            </div>
-	        </div>
-        </div>
-        
 <footer>
   <div class="footer-top">
     <div class="container">
-      <div class="row justify-content-center text-center">
+      <div class="row justify-content-left text-left">
+        
         <!-- About Us -->
-        <div class="col-md-4 footer-about wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
-          <h3>About Us</h3>
-          <p>We are a young company always looking for new and creative ideas to help you with our products in your everyday work.</p>
-          <p><a href="#lab">Our Team</a></p>
-        </div>
-
-        <!-- Contact -->
         <div class="col-md-4 footer-contact wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
-          <h3>Contact</h3>
+          <h3>About Us</h3>
+          <p><i class="fas fa-users"></i> <a href="#lab">Our Team</a></p>
           <p><i class="fas fa-map-marker-alt"></i> <a href="https://g.co/kgs/C575yzc">Univ. of California, Berkeley</a></p>
           <p><i class="fa fa-envelope"></i> <a href="mailto:kmdaane@ucanr.edu">kmdaane@ucanr.edu</a></p>
         </div>
@@ -247,20 +256,25 @@
           <h3>Links</h3>
           <div class="row">
             <div class="col-md-6">
-              <p><a href="#maps">Maps</a></p>
-              <p><a href="#biocontrol">Biological Control</a></p>
+              <p><a href="#maps">Heatmaps</a></p>
+              <p><a href="#dashboard">Dashboards</a></p>
+              <p><a href="#biocontrol">BioControl</a></p>
             </div>
             <div class="col-md-6">
               <p><a href="#resources">Resources</a></p>
-              <p><a href="#lab">Daane Lab</a></p>
+              <p><a href="https://vmb-areawide-manangement.github.io/website/lab">Daane Lab</a></p>
             </div>
           </div>
         </div>
+        
+        <!-- Logo -->
+        <div class="col-md-4 footer-logo text-center wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;">
+  <img src="img/logo trans.png" alt="Logo" class="img-fluid mx-auto d-block" style="max-width: 70%; height: auto;">
+</div>
       </div>
     </div>
   </div>
 </footer>
-
 
         <!-- Javascript -->
         <script src="./Bootstrap Footer Template_files/jquery-3.2.1.min.js"></script>
@@ -271,8 +285,6 @@
         <script src="./Bootstrap Footer Template_files/wow.min.js"></script>
         <script src="./Bootstrap Footer Template_files/retina-1.1.0.min.js"></script>
         <script src="./Bootstrap Footer Template_files/scripts.js"></script>
-
-    
 
 </body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
       div.grammarly-desktop-integration {
@@ -294,4 +306,5 @@
       div.grammarly-desktop-integration:before {
         content: attr(data-content);
       }
-    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;limited&quot;,&quot;isActive&quot;:false,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
+      
+</style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;limited&quot;,&quot;isActive&quot;:false,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
