@@ -10,13 +10,15 @@
 
         <!-- CSS -->
         <link rel="stylesheet" href="./Bootstrap Footer Template_files/css">
-		<link rel="stylesheet" href="./Bootstrap Footer Template_files/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		    <link rel="stylesheet" href="./Bootstrap Footer Template_files/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="./Bootstrap Footer Template_files/all.css">
         <link rel="stylesheet" href="./Bootstrap Footer Template_files/animate.css">
         <link rel="stylesheet" href="./Bootstrap Footer Template_files/style.css">
         <link rel="stylesheet" href="./Bootstrap Footer Template_files/media-queries.css">
 
         <!-- Favicon and touch icons -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         <link rel="shortcut icon" href="https://azmind.com/demo/bootstrap-footer/template-2/assets/ico/favicon.png">
         <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://azmind.com/demo/bootstrap-footer/template-2/assets/ico/apple-touch-icon-144-precomposed.png">
@@ -25,20 +27,6 @@
         <link rel="apple-touch-icon-precomposed" href="https://azmind.com/demo/bootstrap-footer/template-2/assets/ico/apple-touch-icon-57-precomposed.png">
 
 <style>
-
-.cooperator-logo {
-  max-height: 120px;
-  object-fit: contain;
-  width: 100%;
-}
-
-.team-photo {
-  height: 250px;         /* uniform height */
-  object-fit: cover;     /* crop to fill the frame nicely */
-  width: 100%;           /* responsive width */
-  border-radius: 8px;    /* optional: slight rounding */
-}
-
   .zoom-on-hover {
     transition: transform 0.3s ease;
   }
@@ -53,6 +41,7 @@
 
     <body data-new-gr-c-s-check-loaded="14.1232.0" data-gr-ext-installed="">
 
+<!-- Responsive Navbar (Hamburger Only) -->
 <nav class="navbar navbar-dark bg-dark w-100 position-absolute" style="z-index: 1000; top: 0;">
   <div class="container">
     <a class="navbar-brand text-white" href="https://vmb-areawide-manangement.github.io/website">VMB Areawide Program</a>
@@ -67,19 +56,22 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link text-white" href="https://vmb-areawide-manangement.github.io/website/#maps">Heatmaps</a>
+          <a class="nav-link text-white" href="#maps">Heatmaps</a>
+          </li>        
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#dashboard">VMB Dashboard</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link text-white" href="#biocontrol">BioControl</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link text-white" href="#resources">Resources</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="https://vmb-areawide-manangement.github.io/website/#dashboard">VMB Dashboard</a>
+          <a class="nav-link text-white" href="https://vmb-areawide-manangement.github.io/website/publications">Publications</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="https://vmb-areawide-manangement.github.io/website/#biocontrol">BioControl</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="https://vmb-areawide-manangement.github.io/website/#resources">Resources</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="https://vmb-areawide-manangement.github.io/website/#team">The Team</a>
+          <a class="nav-link text-white" href="https://vmb-areawide-manangement.github.io/website/team">The Team</a>
         </li>
       </ul>
     </div>
@@ -268,21 +260,22 @@
           <p><i class="fa fa-envelope"></i> <a href="mailto:kmdaane@ucanr.edu">kmdaane@ucanr.edu</a></p>
         </div>
 
-<!-- Links -->
-<div class="col-md-4 footer-links wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
-  <h3>Links</h3>
-  <div class="row">
-    <div class="col-md-6">
-      <p><a href="https://vmb-areawide-manangement.github.io/website/#maps">Heatmaps</a></p>
-      <p><a href="https://vmb-areawide-manangement.github.io/website/#dashboard">Dashboards</a></p>
-      <p><a href="https://vmb-areawide-manangement.github.io/website/#biocontrol">BioControl</a></p>
-    </div>
-    <div class="col-md-6">
-      <p><a href="https://vmb-areawide-manangement.github.io/website/#resources">Resources</a></p>
-      <p><a href="https://vmb-areawide-manangement.github.io/website/#team">Meet the Team</a></p>
-    </div>
-  </div>
-</div>
+        <!-- Links -->
+        <div class="col-md-4 footer-links wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+          <h3>Links</h3>
+          <div class="row">
+            <div class="col-md-6">
+              <p><a href="#maps">Heatmaps</a></p>
+              <p><a href="#dashboard">Dashboards</a></p>
+              <p><a href="#biocontrol">BioControl</a></p>
+            </div>
+            <div class="col-md-6">
+              <p><a href="#resources">Resources</a></p>
+              <p><a href="https://vmb-areawide-manangement.github.io/website/publications">Publications</a></p>
+              <p><a href="https://vmb-areawide-manangement.github.io/website/team">Meet the Team</a></p>
+            </div>
+          </div>
+        </div>
         
         <!-- Logo -->
         <div class="col-md-4 footer-logo text-center wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;">
