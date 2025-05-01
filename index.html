@@ -27,6 +27,13 @@
         <link rel="apple-touch-icon-precomposed" href="https://azmind.com/demo/bootstrap-footer/template-2/assets/ico/apple-touch-icon-57-precomposed.png">
 
 <style>
+.uniform-heatmap {
+  height: 250px;           /* Adjust as needed */
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
   .zoom-on-hover {
     transition: transform 0.3s ease;
   }
@@ -81,42 +88,30 @@
   </div>
 </nav>
 
-<!-- Section 1 -->
-<div id="maps" class="section-1-container section-container section-container-gray-bg">
-  <div class="container">
-    <div class="row">
-      <div class="col section-1 section-description wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
-        <h2>Updated Heatmaps</h2>
-        <h3>Up to date static heatmaps of VMB capture at participating vineyards</h3>
+<!-- Images in evenly spaced columns -->
+<div class="row text-center">
+  <!-- January -->
+  <div class="col-md-4 section-3-box wow fadeInLeft animated">
+    <h3>January 2025</h3>
+    <a href="img/jan all vmb.pdf" target="_blank">
+      <img src="img/jan vmb.png" alt="January VMB" class="img-fluid mt-2 zoom-on-hover uniform-heatmap">
+    </a>
+  </div>
 
-        <!-- Images in evenly spaced columns -->
-        <div class="row text-center">
-          <!-- January -->
-          <div class="col-md-4 section-3-box wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">
-            <h3>January 2025</h3>
-            <a href="img/jan all vmb.pdf" target="_blank">
-              <img src="img/jan vmb.png" alt="January VMB" class="img-fluid mt-2 zoom-on-hover">
-            </a>
-          </div>
+  <!-- February -->
+  <div class="col-md-4 section-3-box wow fadeInLeft animated">
+    <h3>February 2025</h3>
+    <a href="img/feb all vmb.pdf" target="_blank">
+      <img src="img/feb vmb.png" alt="February VMB" class="img-fluid mt-2 zoom-on-hover uniform-heatmap">
+    </a>
+  </div>
 
-          <!-- February -->
-          <div class="col-md-4 section-3-box wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">
-            <h3>February 2025</h3>
-            <a href="img/feb all vmb.pdf" target="_blank">
-              <img src="img/feb vmb.png" alt="February VMB" class="img-fluid mt-2 zoom-on-hover">
-            </a>
-          </div>
-
-          <!-- March -->
-          <div class="col-md-4 section-3-box wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">
-            <h3>March 2025</h3>
-            <a href="img/mar all vmb.pdf" target="_blank">
-              <img src="img/mar all vmb.png" alt="March VMB" class="img-fluid mt-2 zoom-on-hover">
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
+  <!-- March -->
+  <div class="col-md-4 section-3-box wow fadeInLeft animated">
+    <h3>March 2025</h3>
+    <a href="img/mar all vmb.pdf" target="_blank">
+      <img src="img/mar vmb.png" alt="March VMB" class="img-fluid mt-2 zoom-on-hover uniform-heatmap">
+    </a>
   </div>
 </div>
 
